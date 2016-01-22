@@ -1,0 +1,164 @@
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_TOOL_VERSION "15.0"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "fft_ipcore" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../fft_ipcore.sopcinfo"]
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name SLD_INFO "QSYS_NAME fft_ipcore HAS_SOPCINFO 1 GENERATION_ID 1449578866"
+set_global_assignment -library "fft_ipcore" -name MISC_FILE [file join $::quartus(qip_path) "../fft_ipcore.cmp"]
+set_global_assignment -library "fft_ipcore" -name SLD_FILE [file join $::quartus(qip_path) "fft_ipcore.debuginfo"]
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "fft_ipcore" -name MISC_FILE [file join $::quartus(qip_path) "../../fft_ipcore.qsys"]
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_NAME "ZmZ0X2lwY29yZQ=="
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_DISPLAY_NAME "ZmZ0X2lwY29yZQ=="
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTQ0OTU3ODg2Ng==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTWEZDNkQ2RjMxQzY=::QXV0byBERVZJQ0U="
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nl9INg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "fft_ipcore" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_instance_assignment -entity fft_ipcore_fft_ii_0 -library fft_ipcore -name MESSAGE_DISABLE 270007
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_NAME "ZmZ0X2lwY29yZV9mZnRfaWlfMA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_DISPLAY_NAME "RkZU"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_VERSION "MTUuMA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEZhc3QgRm91cmllciBUcmFuc2Zvcm0gSUk="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "ZGVzaWduX2Vudg==::TkFUSVZF::ZGVzaWduX2Vudg=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "bGVuZ3Ro::NjQ=::TGVuZ3Ro"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "ZGF0YV9mbG93::U3RyZWFtaW5n::RGF0YSBGbG93"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::QmktZGlyZWN0aW9uYWw=::RGlyZWN0aW9u"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "ZGF0YV9yZXA=::QmxvY2sgRmxvYXRpbmcgUG9pbnQ=::UmVwcmVzZW50YXRpb24="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "aW5fd2lkdGg=::MTY=::RGF0YSBJbnB1dCBXaWR0aA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "aW5fd2lkdGhfZGVyaXZlZA==::MTY=::RGF0YSBJbnB1dCBXaWR0aA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "b3V0X3dpZHRo::Mjk=::RGF0YSBPdXRwdXQgV2lkdGg="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "b3V0X3dpZHRoX2Rlcml2ZWQ=::MTY=::RGF0YSBPdXRwdXQgV2lkdGg="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "dHdpZF93aWR0aA==::MTY=::VHdpZGRsZSBXaWR0aA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "dHdpZF93aWR0aF9kZXJpdmVk::MTY=::VHdpZGRsZSBXaWR0aA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "aW5fb3JkZXI=::TmF0dXJhbA==::SW5wdXQgT3JkZXI="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "b3V0X29yZGVy::TmF0dXJhbA==::T3V0cHV0IE9yZGVy"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "ZW5naW5lX2FyY2g=::UXVhZCBPdXRwdXQ=::QXJjaGl0ZWN0dXJl"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "bnVtX2VuZ2luZXM=::MQ==::TnVtYmVyIG9mIFBhcmFsbGVsIEVuZ2luZXM="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "bnVtX2VuZ2luZXNfZGVyaXZlZA==::MQ==::bnVtX2VuZ2luZXNfZGVyaXZlZA=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "ZHNwX3Jlc291cmNlX29wdA==::ZmFsc2U=::RFNQIEJsb2NrIFJlc291cmNlIE9wdGltaXphdGlvbg=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "aGFyZF9mcA==::ZmFsc2U=::RW5hYmxlIEhhcmQgRmxvYXRpbmcgUG9pbnQgQmxvY2tz"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "Q0FMQ19MQVRFTkNZ::NjQ=::Q2FsY3VsYXRpb24gTGF0ZW5jeQ=="
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "VEhST1VHSFBVVF9MQVRFTkNZ::NjQ=::VGhyb3VnaHB1dCBMYXRlbmN5"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_COMPONENT_PARAMETER "c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ==::Q3ljbG9uZSBW::c2VsZWN0ZWRfZGV2aWNlX2ZhbWlseQ=="
+
+set_global_assignment -library "fft_ipcore" -name VERILOG_FILE [file join $::quartus(qip_path) "fft_ipcore.v"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0_1n64cos.hex"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0_2n64cos.hex"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0_1n64sin.hex"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0_3n64cos.hex"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0_2n64sin.hex"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0_3n64sin.hex"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_text_pkg.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_math_pkg.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_lib_pkg.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_avalon_streaming_block_sink.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_avalon_streaming_block_source.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_roundsat.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_avalon_streaming_sink.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_avalon_streaming_source.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_dspip_avalon_streaming_controller.vhd"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_sglstream.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dualstream.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_de_so_b.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_de_so_bb.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_qe_so_b.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_qe_so_bb.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_se_so_b.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_se_so_bb.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_so_se_so_b.ocp"]
+set_global_assignment -library "fft_ipcore" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_sose_so_b.ocp"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/altera_fft_dual_port_ram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/altera_fft_dual_port_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/altera_fft_mult_add.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/altera_fft_single_port_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/auk_fft_pkg.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/fft_pack.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/apn_fft_cmult_cpx.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/apn_fft_cmult_cpx2.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/apn_fft_mult_can.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/apn_fft_mult_cpx.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_1dp_ram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_1tdp_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_3dp_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_3pi_mram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_3tdp_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_4dp_ram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_6tdp_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_alt_shift_tdl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_bfp_ctrl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_bfp_i.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_bfp_i_1pt.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_bfp_o.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_bfp_o_1pt.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_burst_ctrl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_burst_ctrl_de.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_burst_ctrl_qe.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cmult_can.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cmult_std.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cnt_ctrl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cnt_ctrl_de.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cxb_addr.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cxb_data.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cxb_data_mram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_cxb_data_r.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dataadgen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_data_ram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_data_ram_dp.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dft_bfp.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dft_bfp_sgl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dpi_mram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dp_mram.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_dualstream.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_in_write_sgl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lcm_mult.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lcm_mult_2m.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lpp.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lpprdadgen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lpprdadr2gen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lpp_serial.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_lpp_serial_r2.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_mult_add.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_m_k_counter.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_pround.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_sglstream.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_de_so_b.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_de_so_bb.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_qe_so_b.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_qe_so_bb.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_se_so_b.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_se_so_bb.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_si_sose_so_b.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_tdl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_tdl_bit.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_tdl_bit_rst.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_tdl_rst.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_twadgen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_twadgen_dual.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_twadsogen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_twadsogen_q.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_twiddle_ctrl_qe.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_twid_rom_tdp.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_unbburst_ctrl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_unbburst_ctrl_de.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_unbburst_ctrl_qe.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_unbburst_sose_ctrl.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_wrengen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/asj_fft_wrswgen.vhd"]
+set_global_assignment -library "fft_ipcore" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/twid_rom.vhd"]
+set_global_assignment -library "fft_ipcore" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/apn_fft_mult_cpx_1825.v"]
+set_global_assignment -library "fft_ipcore" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/fft_ipcore_fft_ii_0.sv"]
+
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_TOOL_NAME "altera_fft_ii"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_TOOL_VERSION "15.0"
+set_global_assignment -entity "fft_ipcore_fft_ii_0" -library "fft_ipcore" -name IP_TOOL_ENV "Qsys"

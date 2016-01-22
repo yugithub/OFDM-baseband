@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Administrator\Desktop\workepace\ffttest15\fft_ipcore.qsys --block-symbol-file --output-directory=C:\Users\Administrator\Desktop\workepace\ffttest15\fft_ipcore --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading ffttest15/fft_ipcore.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 15.0]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Administrator\Desktop\workepace\ffttest15\fft_ipcore.qsys --synthesis=VERILOG --output-directory=C:\Users\Administrator\Desktop\workepace\ffttest15\fft_ipcore\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading ffttest15/fft_ipcore.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 15.0]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft_ipcore: Generating fft_ipcore "fft_ipcore" for QUARTUS_SYNTH
+Info: fft_ii_0: "fft_ipcore" instantiated altera_fft_ii "fft_ii_0"
+Info: fft_ipcore: Done "fft_ipcore" with 2 modules, 106 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,194 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 336 296)
+	(text "fft_ipcore" (rect 140 -1 178 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 280 20 292)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 61 22 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset_n" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "reset_n" (rect 4 101 46 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 96 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "sink_valid" (rect 0 0 38 12)(font "Arial" (font_size 8)))
+		(text "sink_valid" (rect 4 141 64 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 96 152)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "sink_error[1..0]" (rect 0 0 60 12)(font "Arial" (font_size 8)))
+		(text "sink_error[1..0]" (rect 4 173 100 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 96 184)(line_width 3))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "sink_sop" (rect 0 0 35 12)(font "Arial" (font_size 8)))
+		(text "sink_sop" (rect 4 189 52 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 96 200)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "sink_eop" (rect 0 0 35 12)(font "Arial" (font_size 8)))
+		(text "sink_eop" (rect 4 205 52 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 96 216)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "sink_real[15..0]" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "sink_real[15..0]" (rect 4 221 100 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 96 232)(line_width 3))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "sink_imag[15..0]" (rect 0 0 63 12)(font "Arial" (font_size 8)))
+		(text "sink_imag[15..0]" (rect 4 237 100 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 96 248)(line_width 3))
+	)
+	(port
+		(pt 0 264)
+		(input)
+		(text "inverse" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "inverse" (rect 4 253 46 264)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 96 264)(line_width 1))
+	)
+	(port
+		(pt 336 88)
+		(input)
+		(text "source_ready" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "source_ready" (rect 265 77 337 88)(font "Arial" (font_size 8)))
+		(line (pt 336 88)(pt 224 88)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "sink_ready" (rect 0 0 44 12)(font "Arial" (font_size 8)))
+		(text "sink_ready" (rect 4 157 64 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 96 168)(line_width 1))
+	)
+	(port
+		(pt 336 72)
+		(output)
+		(text "source_valid" (rect 0 0 50 12)(font "Arial" (font_size 8)))
+		(text "source_valid" (rect 271 61 343 72)(font "Arial" (font_size 8)))
+		(line (pt 336 72)(pt 224 72)(line_width 1))
+	)
+	(port
+		(pt 336 104)
+		(output)
+		(text "source_error[1..0]" (rect 0 0 71 12)(font "Arial" (font_size 8)))
+		(text "source_error[1..0]" (rect 247 93 355 104)(font "Arial" (font_size 8)))
+		(line (pt 336 104)(pt 224 104)(line_width 3))
+	)
+	(port
+		(pt 336 120)
+		(output)
+		(text "source_sop" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "source_sop" (rect 275 109 335 120)(font "Arial" (font_size 8)))
+		(line (pt 336 120)(pt 224 120)(line_width 1))
+	)
+	(port
+		(pt 336 136)
+		(output)
+		(text "source_eop" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "source_eop" (rect 275 125 335 136)(font "Arial" (font_size 8)))
+		(line (pt 336 136)(pt 224 136)(line_width 1))
+	)
+	(port
+		(pt 336 152)
+		(output)
+		(text "source_real[15..0]" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "source_real[15..0]" (rect 247 141 355 152)(font "Arial" (font_size 8)))
+		(line (pt 336 152)(pt 224 152)(line_width 3))
+	)
+	(port
+		(pt 336 168)
+		(output)
+		(text "source_imag[15..0]" (rect 0 0 75 12)(font "Arial" (font_size 8)))
+		(text "source_imag[15..0]" (rect 243 157 351 168)(font "Arial" (font_size 8)))
+		(line (pt 336 168)(pt 224 168)(line_width 3))
+	)
+	(port
+		(pt 336 184)
+		(output)
+		(text "source_exp[5..0]" (rect 0 0 67 12)(font "Arial" (font_size 8)))
+		(text "source_exp[5..0]" (rect 251 173 347 184)(font "Arial" (font_size 8)))
+		(line (pt 336 184)(pt 224 184)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 81 43 180 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 67 220 144)(font "Arial" (color 0 0 0)))
+		(text "rst" (rect 81 83 180 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 101 107 244 224)(font "Arial" (color 0 0 0)))
+		(text "sink" (rect 73 123 170 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "sink_valid" (rect 101 147 262 304)(font "Arial" (color 0 0 0)))
+		(text "sink_ready" (rect 101 163 262 336)(font "Arial" (color 0 0 0)))
+		(text "sink_error" (rect 101 179 262 368)(font "Arial" (color 0 0 0)))
+		(text "sink_sop" (rect 101 195 250 400)(font "Arial" (color 0 0 0)))
+		(text "sink_eop" (rect 101 211 250 432)(font "Arial" (color 0 0 0)))
+		(text "sink_real" (rect 101 227 256 464)(font "Arial" (color 0 0 0)))
+		(text "sink_imag" (rect 101 243 256 496)(font "Arial" (color 0 0 0)))
+		(text "inverse" (rect 101 259 244 528)(font "Arial" (color 0 0 0)))
+		(text "source" (rect 225 43 486 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "source_valid" (rect 166 67 404 144)(font "Arial" (color 0 0 0)))
+		(text "source_ready" (rect 161 83 394 176)(font "Arial" (color 0 0 0)))
+		(text "source_error" (rect 164 99 400 208)(font "Arial" (color 0 0 0)))
+		(text "source_sop" (rect 171 115 402 240)(font "Arial" (color 0 0 0)))
+		(text "source_eop" (rect 171 131 402 272)(font "Arial" (color 0 0 0)))
+		(text "source_real" (rect 170 147 406 304)(font "Arial" (color 0 0 0)))
+		(text "source_imag" (rect 166 163 398 336)(font "Arial" (color 0 0 0)))
+		(text "source_exp" (rect 171 179 402 368)(font "Arial" (color 0 0 0)))
+		(text " fft_ipcore " (rect 290 280 652 570)(font "Arial" ))
+		(line (pt 96 32)(pt 224 32)(line_width 1))
+		(line (pt 224 32)(pt 224 280)(line_width 1))
+		(line (pt 96 280)(pt 224 280)(line_width 1))
+		(line (pt 96 32)(pt 96 280)(line_width 1))
+		(line (pt 97 52)(pt 97 76)(line_width 1))
+		(line (pt 98 52)(pt 98 76)(line_width 1))
+		(line (pt 97 92)(pt 97 116)(line_width 1))
+		(line (pt 98 92)(pt 98 116)(line_width 1))
+		(line (pt 97 132)(pt 97 268)(line_width 1))
+		(line (pt 98 132)(pt 98 268)(line_width 1))
+		(line (pt 223 52)(pt 223 188)(line_width 1))
+		(line (pt 222 52)(pt 222 188)(line_width 1))
+		(line (pt 0 0)(pt 336 0)(line_width 1))
+		(line (pt 336 0)(pt 336 296)(line_width 1))
+		(line (pt 0 296)(pt 336 296)(line_width 1))
+		(line (pt 0 0)(pt 0 296)(line_width 1))
+	)
+)

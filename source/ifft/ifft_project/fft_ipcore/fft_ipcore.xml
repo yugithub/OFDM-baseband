@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2015.12.08.20:47:47"
+ outputDirectory="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CSXFC6D6F31C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6_H6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="sink" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="sink_valid" direction="input" role="sink_valid" width="1" />
+   <port name="sink_ready" direction="output" role="sink_ready" width="1" />
+   <port name="sink_error" direction="input" role="sink_error" width="2" />
+   <port name="sink_sop" direction="input" role="sink_sop" width="1" />
+   <port name="sink_eop" direction="input" role="sink_eop" width="1" />
+   <port name="sink_real" direction="input" role="sink_real" width="16" />
+   <port name="sink_imag" direction="input" role="sink_imag" width="16" />
+   <port name="inverse" direction="input" role="inverse" width="1" />
+  </interface>
+  <interface name="source" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="source_valid" direction="output" role="source_valid" width="1" />
+   <port name="source_ready" direction="input" role="source_ready" width="1" />
+   <port name="source_error" direction="output" role="source_error" width="2" />
+   <port name="source_sop" direction="output" role="source_sop" width="1" />
+   <port name="source_eop" direction="output" role="source_eop" width="1" />
+   <port name="source_real" direction="output" role="source_real" width="16" />
+   <port name="source_imag" direction="output" role="source_imag" width="16" />
+   <port name="source_exp" direction="output" role="source_exp" width="6" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="fft_ipcore:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSXFC6D6F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6_H6,AUTO_GENERATION_ID=1449578866,AUTO_UNIQUE_ID=(altera_fft_ii:15.0:CALC_LATENCY=64,THROUGHPUT_LATENCY=64,data_flow=Streaming,data_rep=Block Floating Point,design_env=NATIVE,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,in_order=Natural,in_width=16,in_width_derived=16,length=64,num_engines=1,num_engines_derived=1,out_order=Natural,out_width=29,out_width_derived=16,selected_device_family=Cyclone V,twid_width=16,twid_width_derived=16)"
+   instancePathKey="fft_ipcore"
+   kind="fft_ipcore"
+   version="1.0"
+   name="fft_ipcore">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1449578866" />
+  <parameter name="AUTO_DEVICE" value="5CSXFC6D6F31C6" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6_H6" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/fft_ipcore.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_1n64cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_2n64cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_1n64sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_3n64cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_2n64sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_3n64sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_text_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_math_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_lib_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_roundsat.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_sink.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_source.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_controller.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_sglstream.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dualstream.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_bb.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_bb.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_bb.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_so_se_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_sose_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_dual_port_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_dual_port_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_mult_add.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_single_port_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_fft_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_pack.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_cmult_cpx.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_cmult_cpx2.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_mult_can.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_mult_cpx.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_1dp_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_1tdp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_3dp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_3pi_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_3tdp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_4dp_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_6tdp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_alt_shift_tdl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_i.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_i_1pt.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_o.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_o_1pt.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_burst_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_burst_ctrl_de.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_burst_ctrl_qe.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cmult_can.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cmult_std.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cnt_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cnt_ctrl_de.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_addr.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_data.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_data_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_data_r.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dataadgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_data_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_data_ram_dp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dft_bfp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dft_bfp_sgl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dpi_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dp_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dualstream.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_in_write_sgl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lcm_mult.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lcm_mult_2m.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpprdadgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpprdadr2gen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpp_serial.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpp_serial_r2.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_mult_add.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_m_k_counter.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_pround.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_sglstream.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_bb.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_bb.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_bb.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_sose_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl_bit.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl_bit_rst.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl_rst.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadgen_dual.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadsogen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadsogen_q.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twiddle_ctrl_qe.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twid_rom_tdp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_ctrl_de.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_ctrl_qe.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_sose_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_wrengen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_wrswgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/twid_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_mult_cpx_1825.v"
+       type="VERILOG_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/15.0/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+   <file path="D:/altera/15.0/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file
+       path="D:/altera/15.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="fft_ipcore">queue size: 0 starting:fft_ipcore "fft_ipcore"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="fft_ipcore"><![CDATA["<b>fft_ipcore</b>" reuses <b>altera_fft_ii</b> "<b>submodules/fft_ipcore_fft_ii_0</b>"]]></message>
+   <message level="Debug" culprit="fft_ipcore">queue size: 0 starting:altera_fft_ii "submodules/fft_ipcore_fft_ii_0"</message>
+   <message level="Info" culprit="fft_ii_0"><![CDATA["<b>fft_ipcore</b>" instantiated <b>altera_fft_ii</b> "<b>fft_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_fft_ii:15.0:CALC_LATENCY=64,THROUGHPUT_LATENCY=64,data_flow=Streaming,data_rep=Block Floating Point,design_env=NATIVE,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,in_order=Natural,in_width=16,in_width_derived=16,length=64,num_engines=1,num_engines_derived=1,out_order=Natural,out_width=29,out_width_derived=16,selected_device_family=Cyclone V,twid_width=16,twid_width_derived=16"
+   instancePathKey="fft_ipcore:.:fft_ii_0"
+   kind="altera_fft_ii"
+   version="15.0"
+   name="fft_ipcore_fft_ii_0">
+  <parameter name="THROUGHPUT_LATENCY" value="64" />
+  <parameter name="in_width_derived" value="16" />
+  <parameter name="in_order" value="Natural" />
+  <parameter name="num_engines_derived" value="1" />
+  <parameter name="twid_width_derived" value="16" />
+  <parameter name="length" value="64" />
+  <parameter name="out_order" value="Natural" />
+  <parameter name="selected_device_family" value="Cyclone V" />
+  <parameter name="dsp_resource_opt" value="false" />
+  <parameter name="CALC_LATENCY" value="64" />
+  <parameter name="design_env" value="NATIVE" />
+  <parameter name="data_rep" value="Block Floating Point" />
+  <parameter name="in_width" value="16" />
+  <parameter name="engine_arch" value="Quad Output" />
+  <parameter name="data_flow" value="Streaming" />
+  <parameter name="out_width" value="29" />
+  <parameter name="num_engines" value="1" />
+  <parameter name="out_width_derived" value="16" />
+  <parameter name="hard_fp" value="false" />
+  <parameter name="twid_width" value="16" />
+  <parameter name="direction" value="Bi-directional" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_1n64cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_2n64cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_1n64sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_3n64cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_2n64sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0_3n64sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_text_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_math_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_lib_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_roundsat.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_sink.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_source.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_dspip_avalon_streaming_controller.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_sglstream.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dualstream.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_bb.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_bb.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_bb.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_so_se_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_sose_so_b.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_dual_port_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_dual_port_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_mult_add.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/altera_fft_single_port_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/auk_fft_pkg.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_pack.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_cmult_cpx.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_cmult_cpx2.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_mult_can.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_mult_cpx.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_1dp_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_1tdp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_3dp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_3pi_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_3tdp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_4dp_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_6tdp_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_alt_shift_tdl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_i.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_i_1pt.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_o.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_bfp_o_1pt.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_burst_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_burst_ctrl_de.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_burst_ctrl_qe.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cmult_can.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cmult_std.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cnt_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cnt_ctrl_de.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_addr.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_data.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_data_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_cxb_data_r.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dataadgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_data_ram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_data_ram_dp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dft_bfp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dft_bfp_sgl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dpi_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dp_mram.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_dualstream.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_in_write_sgl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lcm_mult.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lcm_mult_2m.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpprdadgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpprdadr2gen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpp_serial.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_lpp_serial_r2.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_mult_add.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_m_k_counter.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_pround.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_sglstream.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_de_so_bb.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_qe_so_bb.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_se_so_bb.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_si_sose_so_b.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl_bit.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl_bit_rst.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_tdl_rst.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadgen_dual.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadsogen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twadsogen_q.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twiddle_ctrl_qe.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_twid_rom_tdp.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_ctrl_de.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_ctrl_qe.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_unbburst_sose_ctrl.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_wrengen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/asj_fft_wrswgen.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/twid_rom.vhd"
+       type="VHDL_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/apn_fft_mult_cpx_1825.v"
+       type="VERILOG_ENCRYPT"
+       attributes="" />
+   <file
+       path="C:/Users/Administrator/Desktop/workepace/ffttest15/fft_ipcore/synthesis/submodules/fft_ipcore_fft_ii_0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.0/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+   <file path="D:/altera/15.0/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file
+       path="D:/altera/15.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="fft_ipcore" as="fft_ii_0" />
+  <messages>
+   <message level="Debug" culprit="fft_ipcore">queue size: 0 starting:altera_fft_ii "submodules/fft_ipcore_fft_ii_0"</message>
+   <message level="Info" culprit="fft_ii_0"><![CDATA["<b>fft_ipcore</b>" instantiated <b>altera_fft_ii</b> "<b>fft_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>
